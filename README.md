@@ -12,52 +12,52 @@
             --gold: #fbbf24;
         }
 
-        body {
+   body {
             margin: 0; font-family: 'Segoe UI', Roboto, sans-serif;
             background: radial-gradient(circle at top right, #1e1b4b, #020617);
             color: white; min-height: 100vh; overflow-x: hidden;
         }
 
-        /* Экрани Логин */
+ /* Экрани Логин */
         #authScreen {
             position: fixed; inset: 0; z-index: 9999;
             background: #020617; display: flex; align-items: center; justify-content: center;
         }
 
-        .auth-card {
+ .auth-card {
             background: rgba(255,255,255,0.05); backdrop-filter: blur(50px);
             padding: 50px; border-radius: 40px; border: 1px solid var(--border);
             width: 380px; text-align: center; box-shadow: 0 0 80px rgba(99, 102, 241, 0.15);
         }
 
-        .premium-input {
+ .premium-input {
             width: 100%; padding: 15px; margin: 12px 0; border-radius: 15px;
             border: 1px solid var(--border); background: rgba(255,255,255,0.05);
             color: white; outline: none; transition: 0.3s; box-sizing: border-box;
         }
 
-        .btn {
+ .btn {
             width: 100%; padding: 15px; border-radius: 15px; border: none;
             font-weight: 700; cursor: pointer; transition: 0.4s; text-transform: uppercase;
         }
         .btn-glow { background: linear-gradient(45deg, #4f46e5, #818cf8); color: white; box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3); }
 
-        /* Барномаи Асосӣ */
+/* Барномаи Асосӣ */
         #app { display: none; }
 
-        nav {
+nav {
             padding: 15px 6%; display: flex; justify-content: space-between; align-items: center;
             background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(25px);
             position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--border);
         }
 
-        .logo { font-size: 26px; font-weight: 900; background: linear-gradient(to right, #fff, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+ .logo { font-size: 26px; font-weight: 900; background: linear-gradient(to right, #fff, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-        .container { max-width: 1400px; margin: 40px auto; padding: 0 25px; }
+.container { max-width: 1400px; margin: 40px auto; padding: 0 25px; }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 30px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 30px; }
 
-        .glass-card {
+ .glass-card {
             background: var(--glass); backdrop-filter: blur(20px);
             border-radius: 30px; border: 1px solid var(--border);
             overflow: hidden; transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -65,28 +65,29 @@
         }
         .glass-card:hover { transform: translateY(-12px); border-color: var(--accent); background: rgba(255,255,255,0.15); }
 
-        .card-img { 
+.card-img { 
             width: 100%; height: 190px; object-fit: cover; 
             background: #1e293b; /* Ранги эҳтиётӣ агар сурат бор нашавад */
         }
         
-        .card-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+.card-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
 
-        .price-chip {
+.price-chip {
             background: rgba(251, 191, 36, 0.15); color: var(--gold);
             padding: 6px 16px; border-radius: 12px; font-weight: 800; display: inline-block; margin-bottom: 15px; width: fit-content;
         }
 
-        /* Системаи Тест */
+/* Системаи Тест */
         #testModal { display: none; position: fixed; inset: 0; z-index: 5000; background: rgba(0,0,0,0.95); backdrop-filter: blur(15px); }
         .test-box { max-width: 580px; margin: 4% auto; background: white; color: #0f172a; padding: 40px; border-radius: 35px; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
         .opt-btn { width: 100%; padding: 16px; margin: 10px 0; border: 2px solid #e2e8f0; border-radius: 18px; cursor: pointer; font-size: 16px; font-weight: 600; text-align: left; transition: 0.2s; }
         .opt-btn:hover { background: #f1f5f9; border-color: var(--accent); }
 
-        /* Оинаи маълумот */
+ /* Оинаи маълумот */
         #infoModal { display: none; position: fixed; inset: 0; z-index: 6000; background: rgba(0,0,0,0.9); overflow-y: auto; }
         .info-card { max-width: 850px; margin: 40px auto; background: white; color: #1e293b; padding: 50px; border-radius: 40px; position: relative; }
-    </style>
+        
+</style>
 </head>
 <body>
 
